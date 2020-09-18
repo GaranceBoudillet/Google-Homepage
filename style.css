@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#barrenavigation {
+    position: top;
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 20px;
+    grid-template-rows: 40px;
+    grid-gap: none;
+    grid-template-areas: 
+    ". gmail images menu connexion";
+}
+
+a, p {
+    text-decoration: none;
+    color: rgba(24, 24, 24, 0.87);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+#connexion {
+    position: right top ;
+    grid-area: Connexion;
+    justify-self: center;
+    align-self: center;
+    background-color: #4683ea;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+}
+
+#general {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". Rechercher ."
+    ". flexbox ."
+    ". google-text .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#Rechercher {
+    grid-area: Rechercher;
+    height: 40px;
+    width: 120%;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+#Rechercher:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+#Rechercher:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#random-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#google-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+#random-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#google-text {
+    grid-area: google-text;
+    justify-self: center;
+}
+#english {
+    color: blue;
+}
+
+#footer1 {
+    position: absolute;
+    width: 100%;
+    bottom: 40px ;
+    display: footer1 ;
+    font-size: 30px;
+    background-color: #dfdfdf9c;
+    height: 40px;
+    border: 10px;
+    text-align: left;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 30px;
+    grid-template-areas: 
+    "France .";
+
+}
+
+#footer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: footer2 ;
+    font-size: 30px;
+    background-color: #dfdfdf9c;
+    border: 10px;
+    border-color: #929292;
+    height: 40px;
+    line-height: 30px;
+    text-align: left;
+    grid-template-columns: 100px 100px 100px 250px 1fr 150px 150px 100px ;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "publicité entreprise à-propos comment-fonctionne-la-recherche-Google . info-conso confidentialité conditions"
+}
+
+#publicité {
+    grid-area: Publicité;
+    justify-self: center;
+    align-self: center;
+}
+#entreprise {
+    grid-area: Entreprise;
+    justify-self: center;
+    align-self: center;
+} 
+
+#à-propos {  
+    grid-area: A propos;
+    justify-self: center;
+    align-self: center;
+}
+
+#comment-fonctionne-la-recherche-Google {
+    grid-area: Comment fonctionne la recherche Google;
+    justify-self: center;
+    align-self: center;
+}
+
+#info-conso {
+    grid-area: Info consommateurs;
+    justify-self: center;
+    align-self: center;
+}
+
+#confidentialité {
+    grid-area: Confidentialité;
+    justify-self: center;
+    align-self: center;
+}
+
+#conditions {
+    grid-area: Conditions;
+    justify-self: center;
+    align-self: center;
+}
+#parametres {
+    grid-area: Paramètres;
+    justify-self: center;
+    align-self: center;
+}
